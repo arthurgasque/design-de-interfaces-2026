@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos e Estruturas de Dados - ADS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Algoritmos e Estruturas de Dados</h1>
+        <p>
+            Bem-vindo à nossa página de ensino sobre Algoritmos e Estruturas de Dados,
+            um dos pilares fundamentais do curso de Análise e Desenvolvimento de Sistemas.
+            Aqui você encontrará explicações claras e objetivas sobre os principais conceitos
+            desta disciplina, desde a notação de complexidade até as estruturas de dados
+            mais utilizadas na prática profissional. O domínio desses temas é essencial
+            para qualquer desenvolvedor que deseja escrever código eficiente e de qualidade.
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Complexidade de Algoritmos</a></li>
+            <li><a href="#">Estruturas Lineares</a></li>
+            <li><a href="#">Árvores e Grafos</a></li>
+            <li><a href="#">Algoritmos de Ordenação</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>O que são Algoritmos?</h2>
+        <p>
+            Um algoritmo é uma sequência finita e ordenada de passos bem definidos que,
+            quando seguidos corretamente, resolvem um problema ou executam uma tarefa
+            específica. Todo programa de computador é, em sua essência, a implementação
+            de um ou mais algoritmos. Bons algoritmos fazem a diferença entre um software
+            rápido e responsivo e um sistema lento que trava.
+        </p>
+        <p>
+            A análise de algoritmos permite comparar soluções diferentes para o mesmo problema
+            e escolher a mais eficiente, considerando tempo de execução e uso de memória.
+            Para isso, utilizamos a Notação Big-O, que descreve como o desempenho de um
+            algoritmo cresce em relação ao tamanho da entrada.
+        </p>
+
+        <h2>Tabela de Complexidades (Big-O)</h2>
+        <p>
+            A imagem abaixo resume as principais classes de complexidade que você encontrará
+            ao estudar algoritmos. Ela serve como referência rápida para identificar o quão
+            eficiente é um algoritmo.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Big_O_notation">
+            <img src="img/complexidade.svg" alt="Tabela comparativa das notações Big-O de complexidade de algoritmos" width="600">
+        </a>
+
+        <h2>Principais Estruturas de Dados</h2>
+        <p>
+            Estruturas de dados são formas de organizar e armazenar informações na memória
+            do computador de maneira que possam ser acessadas e modificadas de forma eficiente.
+            A escolha da estrutura correta pode reduzir drasticamente a complexidade de um
+            algoritmo. Confira as principais estruturas abaixo:
+        </p>
+
+        <ul>
+            <li>Array (Vetor): sequência de elementos do mesmo tipo armazenados em posições contíguas de memória.</li>
+            <li>Lista Ligada: coleção de nós onde cada nó armazena um dado e um ponteiro para o próximo nó.</li>
+            <li>Pilha (Stack): estrutura LIFO, o último a entrar é o primeiro a sair.</li>
+            <li>Fila (Queue): estrutura FIFO, o primeiro a entrar é o primeiro a sair.</li>
+            <li>Árvore Binária: estrutura hierárquica onde cada nó possui no máximo dois filhos.</li>
+            <li>Grafo: conjunto de vértices conectados por arestas, usado para modelar redes e relacionamentos.</li>
+            <li>Tabela Hash: estrutura que mapeia chaves a valores usando uma função de hashing.</li>
+        </ul>
+
+        <h2>Árvore Binária de Busca</h2>
+        <p>
+            A Árvore Binária de Busca (BST) é uma das estruturas mais importantes da computação.
+            Em uma BST, para cada nó, todos os valores da subárvore esquerda são menores e todos
+            os da subárvore direita são maiores. Isso permite operações de busca, inserção e
+            remoção com complexidade O(log n) em média.
+        </p>
+        <img src="img/arvore-binaria.svg" alt="Diagrama de uma Árvore Binária de Busca com nós numerados 20, 30, 40, 50, 60, 70 e 80" width="600">
+
+        <h2>Algoritmos de Ordenação</h2>
+        <p>
+            Algoritmos de ordenação organizam elementos em uma sequência definida (crescente
+            ou decrescente). A tabela a seguir compara os principais algoritmos quanto à
+            complexidade de tempo e ao uso de memória extra:
+        </p>
+
+        <table>
+            <caption>Comparativo de Algoritmos de Ordenação</caption>
+            <thead>
+                <tr>
+                    <th>Algoritmo</th>
+                    <th>Melhor Caso</th>
+                    <th>Caso Médio</th>
+                    <th>Pior Caso</th>
+                    <th>Memória Extra</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bubble Sort</td>
+                    <td>O(n)</td>
+                    <td>O(n²)</td>
+                    <td>O(n²)</td>
+                    <td>O(1)</td>
+                </tr>
+                <tr>
+                    <td>Selection Sort</td>
+                    <td>O(n²)</td>
+                    <td>O(n²)</td>
+                    <td>O(n²)</td>
+                    <td>O(1)</td>
+                </tr>
+                <tr>
+                    <td>Insertion Sort</td>
+                    <td>O(n)</td>
+                    <td>O(n²)</td>
+                    <td>O(n²)</td>
+                    <td>O(1)</td>
+                </tr>
+                <tr>
+                    <td>Merge Sort</td>
+                    <td>O(n log n)</td>
+                    <td>O(n log n)</td>
+                    <td>O(n log n)</td>
+                    <td>O(n)</td>
+                </tr>
+                <tr>
+                    <td>Quick Sort</td>
+                    <td>O(n log n)</td>
+                    <td>O(n log n)</td>
+                    <td>O(n²)</td>
+                    <td>O(log n)</td>
+                </tr>
+                <tr>
+                    <td>Heap Sort</td>
+                    <td>O(n log n)</td>
+                    <td>O(n log n)</td>
+                    <td>O(n log n)</td>
+                    <td>O(1)</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Fonte: Cormen, T. H. et al. Algoritmos: Teoria e Prática. 3ª ed.</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Vídeo: Introdução a Estruturas de Dados</h2>
+        <p>
+            Assista ao vídeo abaixo para uma introdução visual e didática sobre
+            as principais estruturas de dados e como elas funcionam na prática.
+        </p>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/RBSGKlAvoiM""
+            title="Estruturas de Dados - Vídeo introdutório no YouTube">
+        </iframe>
+
+        <h2>Formulário de Contato e Interesse</h2>
+        <p>
+            Tem dúvidas sobre algum conteúdo ou quer sugerir novos temas?
+            Preencha o formulário abaixo e entraremos em contato.
+        </p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados Pessoais e de Contato</legend>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+
+                <label for="data_nascimento">Data de nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento">
+
+                <label for="nivel">Nível de conhecimento (1 a 5):</label>
+                <input type="number" id="nivel" name="nivel">
+
+                <label for="assunto">Assunto de maior interesse:</label>
+                <input type="text" id="assunto" name="assunto">
+
+                <label for="contato">Forma de contato preferida:</label>
+                <select id="contato" name="contato">
+                    <option value="">Selecione</option>
+                    <option value="email">E-mail</option>
+                    <option value="telefone">Telefone</option>
+                </select>
+
+                <label for="duvida">Descreva sua dúvida ou sugestão:</label>
+                <textarea id="duvida" name="duvida"></textarea>
+
+                <label for="newsletter">Desejo receber novidades por e-mail:</label>
+                <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+
+                <input type="submit" value="Enviar mensagem">
+                <input type="reset" value="Limpar formulário">
+
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Página desenvolvida por: Estudante de ADS - 2º Semestre</p>
+        <p>Disciplina: Design de Interfaces | Trabalho 1 - Página de Ensino HTML</p>
+        <p>Conteúdo baseado em: Cormen et al. (2009) - Introduction to Algorithms</p>
+        <p>Última atualização: 2025</p>
+    </footer>
+
+</body>
+</html>
